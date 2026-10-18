@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVELORA | Discover India. One Journey at a Time.</title>
+    <meta name="description"
+        content="Explore beautiful destinations across India, plan your budget, and discover your next journey with Travelora.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+     <button id="firstb">click me </button>
+    <header>
+        <nav id="navbar" class="glass-nav">
+            <div class="nav-container">
+                <a href="#" class="logo">TRAVEL<span class="accent-text">ORA</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#destinations">DESTINATIONS</a></li>
+                    <li><a href="#planner">TRIP PLANNER</a></li>
+                    <li><a href="#journey">EXPERIENCES</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <div class="cloud cloud-1"></div>
+                <div class="cloud cloud-2"></div>
+                <div class="airplane">✈</div>
+                <div class="particles"></div>
+            </div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content reveal">
+                <h1 class="hero-title">EXPLORE <span class="accent-text">INDIA</span></h1>
+                <p class="hero-subtitle">"Every destination has a story. Find yours."</p>
+                <div class="hero-actions">
+                    <a href="#destinations" class="btn btn-primary">EXPLORE DESTINATIONS</a>
+                    <a href="#planner" class="btn btn-secondary">PLAN YOUR TRIP</a>
+                </div>
+            </div>
+            <div class="mountain-silhouette"></div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations" class="destinations-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>TOP <span class="accent-text">DESTINATIONS</span></h2>
+                    <p>Discover the rich heritage and diverse landscapes of India.</p>
+                    <div class="filter-controls">
+                        <button class="filter-btn active" data-filter="all">ALL</button>
+                        <button class="filter-btn" data-filter="mountains">MOUNTAINS</button>
+                        <button class="filter-btn" data-filter="beaches">BEACHES</button>
+                        <button class="filter-btn" data-filter="nature">NATURE</button>
+                        <button class="filter-btn" data-filter="heritage">HERITAGE</button>
+                    </div>
+                </div>
+
+                <div class="dest-grid">
+                    <!-- Card 1 -->
+                    <article class="dest-card animate-pop" data-category="nature mountains">
+                        <div class="card-inner">
+                            <div class="card-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1593693397690-362cb9666cf2?auto=format&fit=crop&w=600&q=80')">
+                            </div>
+                            <div class="card-info glass-panel">
+                                <h3>COORG</h3>
+                                <p class="desc">The Scotland of India, famous for coffee plantations.</p>
+                                <div class="card-footer">
+                                    <span class="best-for">Best for: Coffee Estates</span>
+                                    <span class="rating">⭐ 4.8</span>
+                                </div>
+                                <button class="btn btn-primary w-full mt-1">EXPLORE</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="dest-card animate-pop delay-1" data-category="mountains nature">
+                        <div class="card-inner">
+                            <div class="card-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1627914972418-508b5d388656?auto=format&fit=crop&w=600&q=80')">
+                            </div>
+                            <div class="card-info glass-panel">
+                                <h3>OOTY</h3>
+                                <p class="desc">Queen of Hill Stations, nestled in the Nilgiris.</p>
+                                <div class="card-footer">
+                                    <span class="best-for">Best for: Tea Gardens</span>
+                                    <span class="rating">⭐ 4.7</span>
+                                </div>
+                                <button class="btn btn-primary w-full mt-1">EXPLORE</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="dest-card animate-pop delay-2" data-category="mountains">
+                        <div class="card-inner">
+                            <div class="card-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1626509653294-3ac85906f363?auto=format&fit=crop&w=600&q=80')">
+                            </div>
+                            <div class="card-info glass-panel">
+                                <h3>MANALI</h3>
+                                <p class="desc">A high-altitude Himalayan resort town.</p>
+                                <div class="card-footer">
+                                    <span class="best-for">Best for: Adventure</span>
+                                    <span class="rating">⭐ 4.9</span>
+                                </div>
+                                <button class="btn btn-primary w-full mt-1">EXPLORE</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="dest-card animate-pop" data-category="beaches">
+                        <div class="card-inner">
+                            <div class="card-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=600&q=80')">
+                            </div>
+                            <div class="card-info glass-panel">
+                                <h3>GOA</h3>
+                                <p class="desc">Famous for its beaches, nightlife, and world heritage architecture.</p>
+                                <div class="card-footer">
+                                    <span class="best-for">Best for: Nightlife</span>
+                                    <span class="rating">⭐ 4.6</span>
+                                </div>
+                                <button class="btn btn-primary w-full mt-1">EXPLORE</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="dest-card animate-pop delay-1" data-category="nature mountains">
+                        <div class="card-inner">
+                            <div class="card-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=600&q=80')">
+                            </div>
+                            <div class="card-info glass-panel">
+                                <h3>MUNNAR</h3>
+                                <p class="desc">Lush green valleys in God's Own Country.</p>
+                                <div class="card-footer">
+                                    <span class="best-for">Best for: Trekking</span>
+                                    <span class="rating">⭐ 4.8</span>
+                                </div>
+                                <button class="btn btn-primary w-full mt-1">EXPLORE</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="dest-card animate-pop delay-2" data-category="heritage">
+                        <div class="card-inner">
+                            <div class="card-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=600&q=80')">
+                            </div>
+                            <div class="card-info glass-panel">
+                                <h3>JAIPUR</h3>
+                                <p class="desc">The Pink City, rich with majestic palaces and forts.</p>
+                                <div class="card-footer">
+                                    <span class="best-for">Best for: Palaces</span>
+                                    <span class="rating">⭐ 4.7</span>
+                                </div>
+                                <button class="btn btn-primary w-full mt-1">EXPLORE</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trip Planner Section -->
+        <section id="planner" class="planner-section">
+            <div class="container">
+                <div class="flex-layout reveal">
+                    <div class="flex-info">
+                        <h2>START <span class="accent-text">PLANNING</span></h2>
+                        <p>Use our interactive calculator to estimate the cost of your next big adventure.</p>
+                        <div class="planner-features">
+                            <p>✓ Transparent Pricing</p>
+                            <p>✓ No Hidden Fees</p>
+                            <p>✓ Customizable options</p>
+                        </div>
+                    </div>
+                    <div class="flex-card glass-panel">
+                        <h3>TRIP CALCULATOR</h3>
+                        <form id="calc-form">
+                            <div class="input-group">
+                                <label>Select Destination</label>
+                                <select id="calc-dest" required>
+                                    <option value="">Choose one...</option>
+                                    <option value="coorg">Coorg</option>
+                                    <option value="ooty">Ooty</option>
+                                    <option value="manali">Manali</option>
+                                    <option value="goa">Goa</option>
+                                    <option value="munnar">Munnar</option>
+                                    <option value="jaipur">Jaipur</option>
+                                </select>
+                            </div>
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label>Number of Days</label>
+                                    <input type="number" id="calc-days" min="1" max="30" required placeholder="e.g. 3">
+                                </div>
+                                <div class="input-group">
+                                    <label>Travelers</label>
+                                    <input type="number" id="calc-people" min="1" max="20" required
+                                        placeholder="e.g. 2">
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label>Travel Style</label>
+                                <select id="calc-style" required>
+                                    <option value="budget">Budget</option>
+                                    <option value="standard">Standard</option>
+                                    <option value="luxury">Luxury</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-secondary w-full">CALCULATE MY TRIP</button>
+                        </form>
+
+                        <div id="calc-result" class="result-panel hidden">
+                            <h4 id="res-dest">Coorg</h4>
+                            <p><span id="res-dur">3</span> Days | <span id="res-trav">2</span> Travelers</p>
+                            <div class="total-price">
+                                <span>Estimated Cost:</span>
+                                <span id="res-cost" class="accent-text">₹18,500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Journey Timeline -->
+        <section id="journey" class="journey-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>THE <span class="accent-text">EXPERIENCE</span></h2>
+                    <p>A typical 4-day itinerary tailored for discovery and relaxation.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal-slide-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <h4>DAY 01</h4>
+                            <h3>Arrival & Local Exploration</h3>
+                            <p>Check in to your resort, relax, and explore the nearby local markets and evening culture.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-slide-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <h4>DAY 02</h4>
+                            <h3>Nature & Adventure</h3>
+                            <p>Start early with a guided trek or safari, immersing yourself in the raw natural beauty.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-slide-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <h4>DAY 03</h4>
+                            <h3>Culture & Local Food</h3>
+                            <p>Experience local heritage sites, museums, and a grand feast of authentic regional
+                                cuisines.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-slide-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <h4>DAY 04</h4>
+                            <h3>Departure</h3>
+                            <p>Enjoy a relaxed morning breakfast, pick up souvenirs, and prepare for your journey home.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>PHOTO <span class="accent-text">GALLERY</span></h2>
+                    <p>Inspiring visuals from across the subcontinent.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item animate-pop">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=600&q=80"
+                            alt="Taj Mahal">
+                        <div class="gallery-overlay">
+                            <h3>Agra</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-pop delay-1">
+                        <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=600&q=80"
+                            alt="Kerala Backwaters">
+                        <div class="gallery-overlay">
+                            <h3>Kerala</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-pop delay-2">
+                        <img src="https://images.unsplash.com/photo-1564507592227-0b0b8c4c77c0?auto=format&fit=crop&w=600&q=80"
+                            alt="Rajasthan Desert">
+                        <div class="gallery-overlay">
+                            <h3>Jaisalmer</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-pop">
+                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&q=80"
+                            alt="India Gate">
+                        <div class="gallery-overlay">
+                            <h3>Delhi</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-pop delay-1">
+                        <img src="https://images.unsplash.com/photo-1589311391515-71fa84c833d7?auto=format&fit=crop&w=600&q=80"
+                            alt="Varanasi Ghats">
+                        <div class="gallery-overlay">
+                            <h3>Varanasi</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-pop delay-2">
+                        <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=600&q=80"
+                            alt="Himalayas">
+                        <div class="gallery-overlay">
+                            <h3>Ladakh</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Trip Request Form -->
+        <section id="contact" class="contact-section">
+            <div class="container reveal">
+                <div class="contact-box glass-panel">
+                    <h2>REQUEST A <span class="accent-text">TRIP</span></h2>
+                    <p>Fill out the form below and our travel experts will reach out to tailor your dream vacation.</p>
+
+                    <form id="contact-form">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="input-group">
+                                <label for="contact-email">Email Address</label>
+                                <input type="email" id="contact-email" name="email" required
+                                    placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="contact-dest">Preferred Destination</label>
+                                <input type="text" id="contact-dest" name="destination" required
+                                    placeholder="e.g. Coorg">
+                            </div>
+                            <div class="input-group">
+                                <label for="contact-days">Number of Days</label>
+                                <input type="number" id="contact-days" name="days" required min="1" max="60"
+                                    placeholder="e.g. 5">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="contact-msg">Additional Details</label>
+                            <textarea id="contact-msg" rows="4" required
+                                placeholder="Tell us about what you want to experience..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-full mt-1">SUBMIT TRIP REQUEST</button>
+                    </form>
+
+                    <div id="contact-success" class="success-msg hidden">
+                        <div class="check-icon">✓</div>
+                        <h3>TRIP REQUEST RECEIVED</h3>
+                        <p>Our travel agents will contact you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h2>TRAVEL<span class="accent-text">ORA</span></h2>
+            <p>"Discover India. One Journey at a Time."</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TRAVELORA. Created for Webcraft Hackathon.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
